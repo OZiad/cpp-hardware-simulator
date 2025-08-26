@@ -5,7 +5,7 @@
 class Sensor
 {
 public:
-    explicit Sensor(ThreadSafeQueue<int> outQue, int hz = 10);
+    explicit Sensor(ThreadSafeQueue<int>& outQue, int hz = 10);
     ~Sensor();
     void start();
     void stop();
