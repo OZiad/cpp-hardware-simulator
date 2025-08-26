@@ -1,5 +1,6 @@
 #pragma once
 #include <condition_variable>
+#include <iostream>
 #include <optional>
 #include <queue>
 
@@ -7,7 +8,7 @@ template <typename T>
 class ThreadSafeQueue
 {
 public:
-    ThreadSafeQueue()= default;
+    ThreadSafeQueue() = default;
     ThreadSafeQueue(const ThreadSafeQueue&) = delete;
     ThreadSafeQueue& operator=(const ThreadSafeQueue&) = delete;
 
